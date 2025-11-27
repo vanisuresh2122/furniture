@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Furniture — Modern Home</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style1.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logofr.png" alt="Brand logo" class="logo">
+      </div>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#offers">Offers</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#blogs">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i></button>
+        <button class="icon-btn" aria-label="Account"><i class="fa-solid fa-user"></i></button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+  <!-- LOGIN POPUP -->
+<div id="loginPopup" class="login-popup">
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+        <input type="password" id="loginPass" placeholder="Enter Password">
+
+        <button id="loginBtn">Login</button>
+        <button id="closeLogin">Cancel</button>
+    </div>
+</div>
+
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left" data-aos="fade-right">
+        <p class="overline">Best Furniture</p>
+        <h1>Discover Stylish Furniture <br>for Every Room</h1>
+        <p class="lead">Handpicked modern and timeless designs to elevate your living space.</p>
+        <div class="hero-ctas">
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+          <a href="#offers" class="btn btn-ghost">See Offers</a>
+        </div>
+      </div>
+
+      <div class="hero-right" data-aos="fade-left">
+        <img src="banner-image.png" alt="Hero product" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section id="offers" class="offers container">
+    <div class="offer-large" data-aos="zoom-in">
+      <img src="discount-image1.jpg" alt="">
+      <div class="offer-badge">
+        <small>New Arrival</small>
+        <h3>Get <span>20%</span> OFF</h3>
+        <a class="btn btn-secondary" href="#products">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="offer-column">
+      <div class="offer-small" data-aos="fade-up">
+        <img src="discount-image2.jpg" alt=""><br><br>
+        <div class="offer-badge small">
+          <small>New</small>
+          <h4>20% OFF</h4>
+          <a class="btn btn-secondary" href="#products">Shop Now</a>
+        </div>
+      </div>
+      <div class="offer-small1" data-aos="fade-up" data-aos-delay="80">
+        <img src="discount-image1.jpg" alt="">
+        <div class="offer-badge small">
+          <small>Hot Selling</small>
+          <h4>20% OFF</h4>
+          <a class="btn btn-secondary" href="#products">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="products container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="overline">FEATURED ITEMS</p>
+      <h2>OUR POPULAR PRODUCTS</h2>
+    </div>
+
+    <div class="products-grid">
+      <!-- card -->
+      <article class="card" data-aos="fade-up">
+        <div class="card-media">
+          <img src="feature-image1.png" alt="Rustic table">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>Rustic Farmhouse Dining Table</h3>
+          <p class="price"><span class="current">$48.00</span> <del>$99.00</del></p>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="60">
+        <div class="card-media">
+          <img src="feature-image2.png" alt="Wooden chair">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>Classic Wooden Chair</h3>
+          <p class="price"><span class="current">$32.00</span> <del>$65.00</del></p>
+        </div>
+      </article>
+
+      <article class="card" data-aos="fade-up" data-aos-delay="120">
+        <div class="card-media">
+          <img src="feature-image3.png" alt="Sofa">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>Deluxe Sofa Set</h3>
+          <p class="price"><span class="current">$89.00</span> <del>$150.00</del></p>
+        </div>
+      </article>
+      <article class="card" data-aos="fade-up" data-aos-delay="120">
+        <div class="card-media">
+          <img src="feature-image4.png" alt="Sofa">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>Leather Chair</h3>
+          <p class="price"><span class="current">$100.00</span> <del>$200.00</del></p>
+        </div>
+      </article>
+      <article class="card" data-aos="fade-up" data-aos-delay="120">
+        <div class="card-media">
+          <img src="feature-image5.png" alt="Sofa">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>PuffNest</h3>
+          <p class="price"><span class="current">$39.00</span> <del>$50.00</del></p>
+        </div>
+      </article>
+      <article class="card" data-aos="fade-up" data-aos-delay="120">
+        <div class="card-media">
+          <img src="feature-image6.png" alt="Sofa">
+          <button class="heart-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="card-body">
+          <h3>Night Lamp</h3>
+          <p class="price"><span class="current">$49.00</span> <del>$100.00</del></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about container">
+    <div class="about-grid">
+      <div class="about-media" data-aos="fade-up">
+        <img src="about-image1.jpg" alt="About image">
+      </div>
+      <div class="about-content" data-aos="fade-up" >
+        <h4>About Us</h4>
+        <h2>Crafting Your Dream Space</h2>
+        <p>We combine craftsmanship, comfort and sustainability to create furniture you'll love for years.</p>
+        <a class="btn btn-primary" href="#contact">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section id="blogs" class="categories container">
+    <div class="section-head">
+      <p class="overline">Shop by</p>
+      <h2>Categories</h2>
+    </div>
+    <div class="category-grid">
+      <div class="category" data-aos="fade-up">
+        <img src="categories-image1.jpg" alt="">
+        <h3>Living Room</h3>
+      </div>
+      <div class="category" data-aos="fade-up" data-aos-delay="40">
+        <img src="categories-image2.jpg" alt="">
+        <h3>Bedroom</h3>
+      </div>
+      <div class="category" data-aos="fade-up" data-aos-delay="80">
+        <img src="categories-image3.jpg" alt="">
+        <h3>Dining</h3>
+      </div>
+      <div class="category" data-aos="fade-up" data-aos-delay="120">
+        <img src="categories-image4.jpg" alt="">
+        <h3>Office</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +2114255</p>
+        <p><i class="fa-solid fa-envelope"></i> contrive@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> 121 Kington, Melbourne</p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <div class="social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init({
+   once:true,
+    duration:600 }); 
+</script>
+<script>
+    const hearts = document.querySelectorAll(".heart-btn");
+
+    hearts.forEach(heart => {
+      heart.addEventListener("click", function () {
+        this.classList.toggle("fa-regular");
+        this.classList.toggle("fa-solid");
+        this.classList.toggle("active");
+      });
+    });
+</script>
+  <script src="script1.js"></script>
+</body>
+</html>
